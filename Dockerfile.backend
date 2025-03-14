@@ -1,0 +1,15 @@
+FROM python:3.10
+
+WORKDIR /app
+
+COPY requirements.txt .
+
+# ✅ Install dependencies & force correct versions
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt && \
+    pip install --no-cache-dir numpy==1.23.5 huggingface_hub==0.20 diffusers==0.18
+
+# ✅ Copy the app files
+COPY . .
+
+CMD ["python", "app.py"]
