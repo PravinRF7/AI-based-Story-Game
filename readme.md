@@ -1,7 +1,7 @@
-# **AI-Powered Visual Novel Game **
+# AI-Powered Visual Novel Game 
 The AI-Based Story Game is an interactive storytelling web application where users create their own adventure by entering prompts. The AI generates dynamic text-based narratives and real-time AI-generated images to visualize each scene. Powered by GPT-2 for text generation and Stable Diffusion for image creation, this immersive experience lets users shape their journey step by step. The game runs on a Flask backend and a React frontend, seamlessly integrated with Docker for easy deployment. Whether you seek mystery, fantasy, or sci-fi, the AI adapts to your imagination, making each playthrough unique! 🚀📖🎭
 
-#**Setup & Execution Guide**
+#Setup & Execution Guide
 ## ** Prerequisites**
 Ensure you have the following installed:
 - **Python 3.10+**
