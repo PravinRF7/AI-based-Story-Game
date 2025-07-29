@@ -43,7 +43,9 @@ def generate_text():
     user_input = data.get("user_input", "")
 
     prompt = f"{user_input}"
-    output = text_generator(prompt, max_length=150, num_return_sequences=1)
+    output = text_generator(
+        prompt, max_length=150, num_return_sequences=1, return_full_text=False
+    )
 
     return jsonify({"story": output[0]["generated_text"]})
 
